@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".GpsService">
+
+    <LinearLayout
+        android:layout_width="660dp"
+        android:layout_height="535dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <Button
+                android:id="@+id/sendalert"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:background="@color/cyan"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:text="SEND Alert" />
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey">
+            </LinearLayout>
+            <Button
+                android:id="@+id/consultialert"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:background="@color/cyan"
+               android:textSize="30dp"
+                android:gravity="center"
+                android:text="Consult Alert" />
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey">
+            </LinearLayout>
+            <Button
+                android:id="@+id/logoutid"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:background="@color/cyan"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:text="Logout" />
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey">
+            </LinearLayout>
+
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="5dp"
+    android:background="@color/grey">
+
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:orientation="vertical"
+            >
+            <include
+                layout="@layout/activity_maps"
+                android:layout_width="match_parent"
+                android:layout_height="350dp">
+            </include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/grey">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey">
+            </LinearLayout>
+            <Button
+                android:id="@+id/getcloser"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:background="@color/cyan"
+                android:gravity="center"
+                android:text="Getcloser" />
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey">
+            </LinearLayout>
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:background="@color/cyan"
+                android:gravity="center"
+                android:text="Stop"
+                />
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey">
+            </LinearLayout>
+            <Button
+                android:id="@+id/starting"
+                android:layout_width="215dp"
+                android:layout_height="match_parent"
+                android:background="@color/cyan"
+                android:gravity="center"
+                android:text="Starting"
+                />
+            <LinearLayout
+                android:layout_width="5dp"
+                android:layout_height="match_parent"
+                android:background="@color/grey">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="5dp"
+        android:layout_height="535dp"
+        android:background="@color/grey">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="535dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerviewc"
+            android:layout_width="290dp"
+            android:layout_height="535dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </LinearLayout>
+</LinearLayout>
