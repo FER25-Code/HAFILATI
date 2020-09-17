@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+
+        >
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinatorLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarL"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/mSearchLien"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                app:defaultQueryHint="Search..">
+            </android.support.v7.widget.SearchView>
+
+        </android.support.design.widget.CoordinatorLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="N°Line" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="50dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:text="Line" />
+
+
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerviewLine"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e7e9e9"
+        android:dividerHeight="@null"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+</LinearLayout>

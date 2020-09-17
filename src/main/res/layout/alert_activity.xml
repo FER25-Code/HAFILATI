@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Alert.AlertActivity">
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="Send Alert"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        tools:ignore="MissingConstraints">
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/white"
+    tools:ignore="MissingConstraints">
+    <Spinner
+        android:id="@+id/spinnerAlert"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:spinnerMode="dialog" />
+</LinearLayout>
+     <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    tools:ignore="MissingConstraints">
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+        <Spinner
+            android:id="@+id/spinnerline"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:spinnerMode="dialog" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/editTextAlert"
+        android:layout_width="395dp"
+        android:layout_height="116dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Commment..."
+        android:gravity="center"
+        android:layout_gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="306dp"
+        tools:ignore="MissingConstraints" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="20dp">
+</LinearLayout>
+    <Button
+        android:id="@+id/buttonSalert"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bgbtn"
+        android:text="Send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="479dp" />
+</LinearLayout>

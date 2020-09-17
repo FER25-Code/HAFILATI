@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="400dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="3dp"
+        tools:layout_editor_absoluteX="3dp">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="270dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:text="Time" />
+        <TextView
+            android:id="@+id/time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/time2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_toRightOf="@+id/time1"
+            android:textSize="15sp" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center|left"
+            android:src="@drawable/bus" />
+        <TextView
+            android:id="@+id/nbus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="86"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="70dp"
+            android:layout_gravity="bottom"/>
+
+        <TextView
+            android:id="@+id/nbusvv"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="bottom"
+            android:text="NbrBus"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:layout_gravity="bottom"
+            android:text="9min" />
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
